@@ -1,1 +1,7 @@
-/* CSS declarations go here */
+.outer {
+  border: 2px solid red;
+}
+
+.inner {
+  border: 2px solid blue;
+}

@@ -1,19 +1,3 @@
-if (Meteor.isClient) {
-  Template.hello.greeting = function () {
-    return "Welcome to meteor-nested-blaze-layout.";
-  };
-
-  Template.hello.events({
-    'click input': function () {
-      // template data, if any, is available in 'this'
-      if (typeof console !== 'undefined')
-        console.log("You pressed the button");
-    }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+Router.map(function() {
+  this.route('index', { path: '/' });
+});
